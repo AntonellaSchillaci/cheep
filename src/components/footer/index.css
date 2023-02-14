@@ -1,0 +1,20 @@
+footer {
+    background-color: rgba(222, 62, 163, 0.269);
+    text-align: center;
+    padding: 22px;
+    font-weight: bold;
+    position:static;
+    bottom: 0;
+    width: 100%;
+   
+}
+
+.linkLogo {
+    color:  rgb(222, 62, 163);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.linkLogo:hover {
+    color: black;
+}

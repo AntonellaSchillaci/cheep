@@ -1,0 +1,50 @@
+.Modal {
+    position: fixed;
+    animation-name: animateModal;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  .modalContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(167, 46, 155, 0.75);
+    z-index: -1;
+  }
+  
+  .content {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: white;
+  }
+
+  @keyframes animateModal {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: 150px;
+    }
+  }
+  
+
+  @media only screen and (min-width: 1280px) {
+    @keyframes animateModal {
+      0% {
+        top: -100px;
+      }
+      100% {
+        top: 0;
+      }
+    }
+  }
